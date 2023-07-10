@@ -29,6 +29,14 @@ public class Q5 {
 	    public boolean hasKey(K key) {
 	        return getKey(key) != null;
 	    }
+	    
+	    private int getIndex(K key, int hashFunction) {
+	    	// gets the hash code for the key using the selected hash function
+	        int hash = hashFunction == 1 ? key.hashCode() : ~key.hashCode();
+	        
+	        // maps the hash code to a valid index in the keys array
+	        return Math.abs(hash) % keys.length;
+	    }
 
 	    public V getKey(K key) {
 	    	// computes the two possible indices using the hash functions
@@ -72,14 +80,6 @@ public class Q5 {
 	        	// if both the indices are not free, call evictRehash
 	            evictRehash(key, value);
 	        }
-	    }
-
-	    private int getIndex(K key, int hashFunction) {
-	    	// gets the hash code for the key using the selected hash function
-	        int hash = hashFunction == 1 ? key.hashCode() : ~key.hashCode();
-	        
-	        // maps the hash code to a valid index in the keys array
-	        return Math.abs(hash) % keys.length;
 	    }
 	    
 	    private void rehashMap() {
