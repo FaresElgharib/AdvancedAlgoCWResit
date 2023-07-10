@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Q8 {
 
-	
-
 	static class TicTacToe {
 	    private static final int SIZE = 3;
 	    private static final char EMPTY = ' ';
@@ -46,6 +44,7 @@ public class Q8 {
 	            if (currentPlayer == PLAYER_X) {
 	                getUserMove();
 	            }
+	        }
 
 	    }
 
