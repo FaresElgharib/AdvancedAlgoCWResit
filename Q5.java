@@ -134,24 +134,24 @@ public class Q5 {
 		map.add("two", 2);
 		map.add("three", 3);
 
-		System.out.println(map.getKey("one"));    // Output: 1
-		System.out.println(map.getKey("two"));    // Output: 2
-		System.out.println(map.getKey("three"));  // Output: 3
-		System.out.println(map.getKey("four"));   // Output: null
+		System.out.println(map.getKey("one"));    // output: 1
+		System.out.println(map.getKey("two"));    // output: 2
+		System.out.println(map.getKey("three"));  // output: 3
+		System.out.println(map.getKey("four"));   // output: null
 
-		System.out.println(map.size());        // Output: 3
-		System.out.println(map.isEmpty());     // Output: false
+		System.out.println(map.size());        // output: 3
+		System.out.println(map.isEmpty());     // output: false
 
 		map.add("four", 4);
 		map.add("five", 5);
 
-		System.out.println(map.size());        // Output: 5
+		System.out.println(map.size());        // output: 5
 
-		map.add("six", 6);  // Rehashing occurs here
+		map.add("six", 6);  // rehashing
 		map.add("seven", 7);
 		
-		System.out.println(map.size());        // Output: 7
-		System.out.println(map.getKey("six"));    // Output: 6
-		System.out.println(map.getKey("seven"));  // Output: 7
+		System.out.println(map.size());        // output: 7
+		System.out.println(map.getKey("six"));    // output: 6
+		System.out.println(map.getKey("seven"));  // output: 7
 	}
 }
