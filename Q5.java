@@ -122,7 +122,7 @@ public class Q5 {
 	            attempts++;
 	        }
 
-	        // if the while loop is over that means rehashing failed, increases the capacity and reinsert all entries
+	        // if the while loop is over that means rehashing failed, increases the capacity and reinserts the pair
 	        rehashMap();
 	        add(key, value);
 	    }
