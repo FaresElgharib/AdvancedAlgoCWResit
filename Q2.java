@@ -50,7 +50,7 @@ public class Q2 {
 	            arr[i] = arr[largest];
 	            arr[largest] = temp1;
 
-	            // using recursion heapify the affected sub-tree
+	            // using recursion heapify the sub-tree
 	            heapify(arr, n, largest);
 	        }
 	    }
