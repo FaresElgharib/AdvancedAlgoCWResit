@@ -58,31 +58,31 @@ public class Q4 {
 	        	System.out.print("-");
 	        }
 	        System.out.println("^");
-	    }
-
-	    public static void main(String[] args) {
-	        SimpTextEditor edit = new SimpTextEditor();
-	        edit.add('F');
-	        edit.add('a');
-	        edit.add('r');
-	        edit.add('e');
-	        edit.add('s');
-	        edit.display();
-	        edit.right();
-	        edit.right();
-	        edit.add('!');
-	        edit.display();
-	        edit.left();
-	        edit.display();
-	        edit.remove();
-	        edit.display();
-	        edit.left();
-	        edit.left();
-	        edit.left();
-	        edit.left();
-	        edit.display();
-	        edit.add('f');
-	        edit.display();
-	    }
+	    }	    
 	}
+	
+	public static void main(String[] args) {
+        SimpTextEditor edit = new SimpTextEditor();
+        edit.add('F');
+        edit.add('a');
+        edit.add('r');
+        edit.add('e');
+        edit.add('s');
+        edit.display();
+        edit.right();
+        edit.right();
+        edit.add('!');
+        edit.display();
+        edit.left();
+        edit.display();
+        edit.remove();
+        edit.display();
+        edit.left();
+        edit.left();
+        edit.left();
+        edit.left();
+        edit.display();
+        edit.add('f');
+        edit.display();
+    }
 }
