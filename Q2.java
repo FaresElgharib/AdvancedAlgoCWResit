@@ -46,9 +46,9 @@ public class Q2 {
 
 	        // if the largest is not the root
 	        if (largest != i) {
-	            int temp = arr[i];
+	            int temp1 = arr[i];
 	            arr[i] = arr[largest];
-	            arr[largest] = temp;
+	            arr[largest] = temp1;
 
 	            // using recursion heapify the affected sub-tree
 	            heapify(arr, n, largest);
