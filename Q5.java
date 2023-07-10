@@ -27,10 +27,10 @@ public class Q5 {
 	    }
 
 	    public boolean hasKey(K key) {
-	        return get(key) != null;
+	        return getKey(key) != null;
 	    }
 
-	    public V get(K key) {
+	    public V getKey(K key) {
 	    	// computes the two possible indices using the hash functions
 	        int index1 = getIndex(key, 1);
 	        int index2 = getIndex(key, 2);
@@ -134,10 +134,10 @@ public class Q5 {
 		map.add("two", 2);
 		map.add("three", 3);
 
-		System.out.println(map.get("one"));    // Output: 1
-		System.out.println(map.get("two"));    // Output: 2
-		System.out.println(map.get("three"));  // Output: 3
-		System.out.println(map.get("four"));   // Output: null
+		System.out.println(map.getKey("one"));    // Output: 1
+		System.out.println(map.getKey("two"));    // Output: 2
+		System.out.println(map.getKey("three"));  // Output: 3
+		System.out.println(map.getKey("four"));   // Output: null
 
 		System.out.println(map.size());        // Output: 3
 		System.out.println(map.isEmpty());     // Output: false
@@ -151,7 +151,7 @@ public class Q5 {
 		map.add("seven", 7);
 		
 		System.out.println(map.size());        // Output: 7
-		System.out.println(map.get("six"));    // Output: 6
-		System.out.println(map.get("seven"));  // Output: 7
+		System.out.println(map.getKey("six"));    // Output: 6
+		System.out.println(map.getKey("seven"));  // Output: 7
 	}
 }
