@@ -33,7 +33,7 @@ public class Q6 {
 	            return false; 
 	        }
 
-	        // using recursion check if each subtree is isomorphic by running through the base cases
+	        // using recursion check if each subtree is isomorphic
 	        for (int i = 0; i < root1.children.size(); i++) {
 	            if (!isIsomorphic(root1.children.get(i), root2.children.get(i))) {
 	                return false;
