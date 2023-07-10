@@ -48,7 +48,7 @@ public class Q3 {
 	        trailer.prev = newNode;
 	    }
 
-	    public Node findMiddleNode() {
+	    public Node findMidNode() {
 	    	// start at the node after the header sentinel
 	    	Node Ptr = header.next;
 	        Node fastPtr = header.next;
@@ -78,7 +78,7 @@ public class Q3 {
 	        list.addNode(6);
 	        list.addNode(7);
 
-	        Node middleNode = list.findMiddleNode();
+	        Node middleNode = list.findMidNode();
 	        System.out.println("Middle node value: " + middleNode.value);
 	    }
 }
