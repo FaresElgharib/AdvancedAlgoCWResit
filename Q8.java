@@ -77,7 +77,7 @@ public class Q8 {
 	            if (isValidMove(row, col)) {
 	                break;
 	            } else {
-	                System.out.println("Invalid move. Try again.");
+	                System.out.println("Move not valid try again.");
 	            }
 	        }
 
